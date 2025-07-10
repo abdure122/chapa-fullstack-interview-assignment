@@ -1,0 +1,40 @@
+[33ma993fed[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: commit: fix issues
+[33md785331[m HEAD@{1}: rebase (finish): returning to refs/heads/main
+[33md785331[m HEAD@{2}: rebase (start): checkout HEAD~1
+[33md785331[m HEAD@{3}: rebase (finish): returning to refs/heads/main
+[33md785331[m HEAD@{4}: rebase (reword): Integrate frontend with backend APIs and test data flow
+[33mb0f01eb[m HEAD@{5}: rebase (reword): initial commit
+[33mce32018[m HEAD@{6}: rebase (start): checkout HEAD~3
+[33mfec651b[m HEAD@{7}: rebase (finish): returning to refs/heads/main
+[33mfec651b[m HEAD@{8}: rebase (start): checkout HEAD~3
+[33mfec651b[m HEAD@{9}: rebase (finish): returning to refs/heads/main
+[33mfec651b[m HEAD@{10}: rebase (reword): initial commit
+[33mecab810[m HEAD@{11}: rebase (reword): finilize front end and fix some issues
+[33m5b86c69[m HEAD@{12}: rebase (reword): create apis,and front end file structure
+[33mf5d39e4[m HEAD@{13}: rebase: fast-forward
+[33mce32018[m HEAD@{14}: rebase (start): checkout HEAD~3
+[33m8131f47[m HEAD@{15}: rebase (finish): returning to refs/heads/main
+[33m8131f47[m HEAD@{16}: rebase (reword): initial commit
+[33m81cbbb3[m HEAD@{17}: rebase (reword): finilize front end and fix some issues
+[33m2b462a6[m HEAD@{18}: rebase (reword): create apis,and front end file structure
+[33mf5d39e4[m HEAD@{19}: rebase: fast-forward
+[33mce32018[m HEAD@{20}: rebase (start): checkout HEAD~3
+[33m0d7c5da[m HEAD@{21}: rebase (finish): returning to refs/heads/main
+[33m0d7c5da[m HEAD@{22}: rebase (start): checkout HEAD~3
+[33m0d7c5da[m HEAD@{23}: rebase (finish): returning to refs/heads/main
+[33m0d7c5da[m HEAD@{24}: rebase (start): checkout HEAD~3
+[33m0d7c5da[m HEAD@{25}: commit (amend): initial commit
+[33me8a537f[m HEAD@{26}: rebase (finish): returning to refs/heads/main
+[33me8a537f[m HEAD@{27}: commit: fix conflict
+[33m4956eb9[m HEAD@{28}: pull --rebase origin main (pick): finilize front end and fix some issues
+[33mf5d39e4[m HEAD@{29}: pull --rebase origin main (pick): create apis,and front end file structure
+[33mce32018[m HEAD@{30}: pull --rebase origin main (start): checkout ce3201844012e662dd157d02f40c64a2edbac995
+[33md250eef[m HEAD@{31}: checkout: moving from main to main
+[33md250eef[m HEAD@{32}: checkout: moving from main to main
+[33md250eef[m HEAD@{33}: checkout: moving from main to main
+[33md250eef[m HEAD@{34}: checkout: moving from main to main
+[33md250eef[m HEAD@{35}: commit: update on readme
+[33m903c204[m HEAD@{36}: Branch: renamed refs/heads/master to refs/heads/main
+[33m903c204[m HEAD@{38}: commit: add readme
+[33m5132ff9[m HEAD@{39}: commit: finilize front end and fix some issues
+[33m870edd7[m HEAD@{40}: commit (initial): create apis,and front end file structure

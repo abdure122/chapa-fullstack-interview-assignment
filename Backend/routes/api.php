@@ -1,0 +1,43 @@
+<?php
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\SuperAdminController;
+
+
+Route::get('/user', function (Request $request) {
+    return $request->user();
+})->middleware('auth:sanctum');
+
+
+Route::prefix('auth')->group(function () {
+    Route::post('/login', [AuthController::class, 'login']);
+    Route::post('/register', [AuthController::class, 'register']);
+    Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
+    Route::get('/user', [AuthController::class, 'user'])->middleware('auth:sanctum');
+});
+
+Route::middleware(['auth:sanctum'])->group(function () {
+    Route::prefix('user')->middleware('role:User')->group(function () {
+        Route::get('/transactions', [UserController::class, 'transactions']);
+        Route::post('/payments/initiate', [UserController::class, 'initiatePayment']);
+    });
+    Route::prefix('admin')->middleware('role:Admin,Super Admin')->group(function () {
+        Route::get('/users', [AdminController::class, 'users']);
+        Route::post('/users/{id}/toggle', [AdminController::class, 'toggle']);
+        Route::get('/payments/summary', [AdminController::class, 'paymentsSummary']);
+                Route::get('/transactions', [AdminController::class, 'transactions']);
+
+    });
+    Route::prefix('superadmin')->middleware('role:Super Admin')->group(function () {
+       
+        Route::get('/stats', [SuperAdminController::class, 'stats']);
+        Route::get('/users', [SuperAdminController::class, 'users']);
+        Route::get('/admins', [SuperAdminController::class, 'admins']);
+        Route::post('/admins', [SuperAdminController::class, 'promoteToAdmin']);
+        Route::delete('/admins/{id}', [SuperAdminController::class, 'removeAdmin']);
+    });
+});
